@@ -1,9 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <FORM ENCTYPE="multipart/form-data" ACTION="http://127.0.0.1:5000/image/puppies" METHOD=POST>
+      <FORM ENCTYPE="multipart/form-data" ACTION="http://127.0.0.1:5000/audio" METHOD=POST>
       File to process: <INPUT NAME="file" TYPE="file">
-      <INPUT TYPE="submit" VALUE="Send File">
+        <select class="form-control" id="type" type="text" name="type" required>
+             <option *ngFor="let t of types" [value]="t">{{t}}</option>
+         </select>
+        <INPUT TYPE="submit" VALUE="Send File">
       </FORM>
     </div>
   </div>
