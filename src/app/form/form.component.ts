@@ -9,7 +9,7 @@ import { DreamService } from '../dream.service';
 export class FormComponent implements OnInit {
   types: string[] = ["Kittens", "Puppies", "Flowers", "Titties", "NSFW", "Sunsets", "Selfies"];
   musicFile: any;
-  URL: string = "http://127.0.0.1:5000/image/kittens"
+  url: string = "http://127.0.0.1:5000/audio"
   t:string;
   //TODO need to update URL when new type is selected from types, bind it to t?
 
