@@ -1,26 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h1>Deep Dreaming Audio Augmentation</h1>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="form-group">
-          <!-- <h1>Match all audio files (audio/*)</h1> -->
-          <p>
-            <label>Audio: <input type="file" accept="audio/*"></label>
-          </p>
-        </div>
-        <div class="form-group">
-          <label for="type">Dream Type</label>
-          <select class="form-control" id="type" required>
-            <option *ngFor="let t of types" [value]="t">{{t}}</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <FORM ENCTYPE="multipart/form-data" ACTION="http://127.0.0.1:5000/image/puppies" METHOD=POST>
+      File to process: <INPUT NAME="file" TYPE="file">
+      <INPUT TYPE="submit" VALUE="Send File">
+      </FORM>
     </div>
   </div>
 </div>

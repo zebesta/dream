@@ -51,4 +51,14 @@ export class DreamService {
                .then(this.extractData)
                .catch(this.handleError);
   }
+  // uploadFile(file: file): Primise<any>{
+  //   console.log("Trying to upload files via the service");
+  //   let body = JSON.stringify(name);
+  //   let headers = new Headers({ 'Content-Type': 'application/json' });
+  //   let options = new RequestOptions({ headers: headers });
+  //   return this.http.post(this.uploadUrl, body, options)
+  //              .toPromise()
+  //              .then(this.extractData)
+  //              .catch(this.handleError);
+  // }
 }
