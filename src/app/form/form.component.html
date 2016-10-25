@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <FORM ENCTYPE="multipart/form-data" [action]="url" METHOD=POST>
-      File to process: <INPUT NAME="file" TYPE="file">
-        <select class="form-control" id="type" type="text" name="type" required>
+      <form ngNoForm enctype="multipart/form-data" [action]="url" method=post>
+      File to process: <input name="file" type="file">
+        <select class="form-control" type="text" name="type">
              <option *ngFor="let t of types" [value]="t">{{t}}</option>
          </select>
-        <INPUT TYPE="submit" VALUE="Send File">
-      </FORM>
+        <input type="submit" value="Send File">
+      </form>
     </div>
   </div>
 </div>

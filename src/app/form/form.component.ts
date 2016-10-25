@@ -7,7 +7,7 @@ import { DreamService } from '../dream.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  types: string[] = ["Kittens", "Puppies", "Flowers", "Titties", "NSFW", "Sunsets", "Selfies"];
+  types: string[] = ["Kittens", "Puppies", "Flowers", "Sunsets", "Selfies"];
   musicFile: any;
   url: string = "http://127.0.0.1:5000/audio"
   t:string;
