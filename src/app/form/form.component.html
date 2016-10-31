@@ -6,6 +6,10 @@
         <select class="form-control" type="text" name="type">
              <option *ngFor="let t of types" [value]="t">{{t}}</option>
          </select>
+         <input type="text" name="layer" value="mixed4d_3x3_bottleneck_pre_relu"><br>
+         <input type="text" name="channel" value=139><br>
+         <input type="text" name="iterations" value=1><br>
+         <input type="text" name="octaves" value=1><br>
         <input type="submit" value="Send File" class="form-control">
       </form>
     </div>
